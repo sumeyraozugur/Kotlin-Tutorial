@@ -4,10 +4,11 @@ var greeting:String ?=null
 fun main(){
 
     greeting = "Welcome"
-    when(greeting){
-        null -> println("Null")
-        else -> print("Welcome")
+    val greetingToPrint = when(greeting){
+        null ->  "Hi"
+        else -> greeting
     }
+    println(greetingToPrint)
 
     
 
