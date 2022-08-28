@@ -1,15 +1,9 @@
 
-fun sayHello(greeting:String, vararg itemsToGreet:String){
-
-    itemsToGreet.forEach{ item ->
-        println("$greeting,$item")
-
-    }
-}
-
+fun greetPerson(greeting:String = "Hello", name:String = "Sumeyra") = println("$greeting, $name")
 
 fun main(){
-    sayHello("Hi","Kotlin","Java","Go")
+    greetPerson(name = "Sum") // Hello Sum
+
 }
 
 
