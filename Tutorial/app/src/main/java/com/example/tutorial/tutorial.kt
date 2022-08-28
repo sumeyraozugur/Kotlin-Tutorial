@@ -1,21 +1,16 @@
 
-fun getGreeting() = "Hello Kotlin" //Kotlin allowing us reduce the amount of code
+fun sayHello(name:String){
+    println("Hello, ${name}")
 
-fun sayHello():String {
-    return "Hello"
 }
 
-fun saySomething() {
-    println("Say Something")
-}
+fun saySomethin(greeting:String, name:String) = println("$greeting,$name")
 
 
 
 fun main(){
-
-    println(getGreeting())
-    println(sayHello())
-    saySomething()
+    sayHello("Sumeyra")
+    saySomethin("Hey","Sumeyra")
 
 }
 
