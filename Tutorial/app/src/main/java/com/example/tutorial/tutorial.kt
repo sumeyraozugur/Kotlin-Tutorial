@@ -1,10 +1,14 @@
 
-var sumeyra = "Selam"
-var sevda:String = "Sevda"
+var greeting:String ?=null
 
 fun main(){
-    sumeyra = null.toString()
-    println(sumeyra) //null
+
+    greeting = "Welcome"
+    when(greeting){
+        null -> println("Null")
+        else -> print("Welcome")
+    }
+
     
 
 
