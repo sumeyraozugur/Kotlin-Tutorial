@@ -1,26 +1,15 @@
 
-fun sayHello(greeting:String, itemsToGreet:List<String>){
+fun sayHello(greeting:String, vararg itemsToGreet:String){
 
     itemsToGreet.forEach{ item ->
         println("$greeting,$item")
 
-
     }
-
-
-
 }
 
 
 fun main(){
-
-    val interestingThings = listOf("kotlin","java","python") // you dont add anythings
-    sayHello("Hi",interestingThings)
-
-
-
-
-
+    sayHello("Hi","Kotlin","Java","Go")
 }
 
 
