@@ -1,16 +1,25 @@
 
-var greeting:String ?=null
+fun getGreeting() = "Hello Kotlin" //Kotlin allowing us reduce the amount of code
+
+fun sayHello():String {
+    return "Hello"
+}
+
+fun saySomething() {
+    println("Say Something")
+}
+
+
 
 fun main(){
 
-    greeting = "Welcome"
-    val greetingToPrint = when(greeting){
-        null ->  "Hi"
-        else -> greeting
-    }
-    println(greetingToPrint)
+    println(getGreeting())
+    println(sayHello())
+    saySomething()
+
+}
+
 
     
 
 
-}
