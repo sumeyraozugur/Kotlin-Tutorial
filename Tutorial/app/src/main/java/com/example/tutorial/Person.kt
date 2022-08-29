@@ -1,25 +1,14 @@
 package com.example.tutorial
 
-class Person(val firstName: String, val lastName: String) { //Primary constructor
+class Person(val firstName: String, val lastName: String) {
 
-    init {
-        println("init 1")
+    var nickName:String ?= null
+    set(value) {
+        field = value
+        println("the new nickname is $value")
     }
-
-    //A class has most one primary constructor. and one or more has secondary constructors
-
-    constructor():this("Sum","Öz"){ //Secondary constructor. it should delegate to primary constructor.
-        println("Secondary constructor")
+    get() {
+        println("the returned values is $field")
+        return field
     }
-
-    init {
-        println("init 2")
-    }
-
-    /* Output
-    init 1
-    init 2
-    Secondary constructor
-     */
-
 }
