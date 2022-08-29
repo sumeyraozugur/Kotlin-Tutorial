@@ -2,15 +2,13 @@ import com.example.tutorial.Person
 
 fun main(){
     val person = Person("Sum","Özugur")
-    person.nickName = "Firtina"
-    println(person.nickName)
+    person.println()
+
 
 
 /* Output
-the new nickname is Firtina
-the returned values is Firtina
-Firtina
-
+the returned values is null
+Sum, no nickname,Özugur
  */
 
 
