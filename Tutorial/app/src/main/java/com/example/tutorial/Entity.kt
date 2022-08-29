@@ -21,5 +21,6 @@ class Entity private constructor(val id:String) {
 fun main(){
 
     val entity = Entity.create()
+    println(entity.id) //123
 
 }
