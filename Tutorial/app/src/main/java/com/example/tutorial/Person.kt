@@ -21,13 +21,21 @@ class Person(val firstName: String, val lastName: String) {
 }
 
 interface PersonInfoProvider{
-    fun printInfo(person:Person)
+    val providerInfo:String
+    fun printInfo(person:Person){
+        println("printInfo")
+        person.println()
+    }
 }
 
 class BasicInfoProvider:PersonInfoProvider {
+
+    override val providerInfo: String
+        get() = "BasicInfoProvider"
+
     override fun printInfo(person: Person) {
-        println("printInfo")
-        person.println()
+        super.printInfo(person)
+        println("Additional print statement")
     }
 
 
