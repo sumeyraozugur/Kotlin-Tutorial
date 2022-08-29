@@ -13,12 +13,12 @@ fun main(){
 
     /*
     Output:
-
 printInfo
 the returned values is null
 Sum, no nickname,Özugur
 Additional print statement
 is a session info provider
+
 
 
      */
@@ -33,6 +33,7 @@ fun checTypes(provider: PersonInfoProvider) {
 
     }else{
         println("not a session info provider")
+        (provider as SessionInfoProvider).getSessionId()
     }
 
 
