@@ -1,11 +1,8 @@
-import com.example.tutorial.BasicInfoProvider
-import com.example.tutorial.Person
-import com.example.tutorial.PersonInfoProvider
-import com.example.tutorial.SessionInfoProvider
+import com.example.tutorial.*
 
 fun main(){
     val person = Person("Sum","Özugur")
-    val provider = BasicInfoProvider()
+    val provider = FancyInfoProvider()
     provider.printInfo(person)
     provider.getSessionId()
 
@@ -17,6 +14,7 @@ printInfo
 the returned values is null
 Sum, no nickname,Özugur
 Additional print statement
+FancyInfo
 is a session info provider
 
 

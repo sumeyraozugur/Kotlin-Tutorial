@@ -32,7 +32,7 @@ interface SessionInfoProvider{
     fun getSessionId():String
 }
 
-class BasicInfoProvider:PersonInfoProvider,SessionInfoProvider {
+open class BasicInfoProvider:PersonInfoProvider,SessionInfoProvider {
 
     override val providerInfo: String
         get() = "BasicInfoProvider"
