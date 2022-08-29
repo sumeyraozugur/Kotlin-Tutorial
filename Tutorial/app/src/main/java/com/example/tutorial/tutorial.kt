@@ -1,8 +1,8 @@
-
-fun greetPerson(greeting:String = "Hello", name:String = "Sumeyra") = println("$greeting, $name")
+import com.example.tutorial.Person
 
 fun main(){
-    greetPerson(name = "Sum") // Hello Sum
+    val person = Person()
+    person.firstName
 
 }
 
