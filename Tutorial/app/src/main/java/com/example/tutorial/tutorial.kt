@@ -2,20 +2,24 @@ import com.example.tutorial.*
 
 fun main(){
     val person = Person("Sum","Özugur")
-    val provider = FancyInfoProvider()
-    provider.printInfo(person)
-    provider.getSessionId()
+    val provider = object :PersonInfoProvider{
+        override val providerInfo: String
+            get() = "New Info Object Provider"
 
-    checTypes(provider)
+        fun getSessionId()= "id"
+    }
+
+
+    println(provider.providerInfo)
+    println(provider.getSessionId())
+
+
+
 
     /*
     Output:
-printInfo
-the returned values is null
-Sum, no nickname,Özugur
-Additional print statement
-FancyInfo
-is a session info provider
+New Info Object Provider
+id
 
 
 
@@ -31,7 +35,7 @@ fun checTypes(provider: PersonInfoProvider) {
 
     }else{
         println("not a session info provider")
-        (provider as SessionInfoProvider).getSessionId()
+
     }
 
 
