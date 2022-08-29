@@ -1,15 +1,19 @@
+import com.example.tutorial.BasicInfoProvider
 import com.example.tutorial.Person
 
 fun main(){
     val person = Person("Sum","Özugur")
-    person.println()
+    val provider = BasicInfoProvider()
+    provider.printInfo(person)
 
-
-
-/* Output
+    /*
+    Output:
+printInfo
 the returned values is null
 Sum, no nickname,Özugur
- */
+
+     */
+
 
 
 }
